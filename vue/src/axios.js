@@ -3,6 +3,7 @@ import store from "./store";
 
 const axiosClient = axios.create({
   baseURL: 'http://127.0.0.1:8000/api',
+  // baseURL: 'https://3d.aluteq.info/api',
 })
 
 
@@ -24,3 +25,4 @@ axiosClient.interceptors.response.use(response => {
 })
 
 export default axiosClient;
+
